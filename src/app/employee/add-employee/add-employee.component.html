@@ -1,0 +1,35 @@
+<h2>Add Employee</h2>
+<div class="formData">
+<form [formGroup]="addEmployeeForm">
+    <label for="last-name">Id: </label>
+    <br>
+    <input id="id" type="text" formControlName="id">
+    <br><br>
+    <label for="last-name">First Name: </label>
+    <br>
+    <input id="first-name" type="text" formControlName="firstName">
+    <br><br>
+    <label for="last-name">Middle Name: </label>
+    <br>
+    <input id="middle-name" type="text" formControlName="middleName">
+    <br><br>
+    <label for="first-name">Last Name: </label>
+    <br>
+    <input id="last-name" type="text" formControlName="lastName">
+    <br><br>
+    <label for="first-name">Gender: </label>
+    <br>
+    <input id="gender" type="text" formControlName="gender">
+    <br><br>
+    <label for="first-name">Date Of Birth: </label>
+    <br>
+    <input id="date-of-birth" type="text" formControlName="dateOfBirth">
+    <br><br>
+    <label for="first-name">First Name: </label>
+    <br>
+    <input id="salary" type="text" formControlName="salary">
+    <br><br>
+    <button type="button" class="btn btn-success">ADD</button>
+    <button type="button" class="btn btn-primary" (click)="onBack()">BACK</button>
+  </form>
+</div>

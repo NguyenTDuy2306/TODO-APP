@@ -1,0 +1,16 @@
+<h2>List Of Employee</h2>
+<button type="button" class="btn btn-warning" (click)="addEmployee()">ADD EMPLOYEE</button>
+<div class="employee-list">
+    <div class="btn1">
+    </div>
+    <ul class="employees">
+        <li *ngFor="let employee of employees">
+            <button routerLink="employee" [class.selected]="employee === selectedEmployee" type="button"
+                (click)="onSelect(employee)">
+                <span class="badge">{{employee.id}}</span>
+                <span class="name">{{employee.lastName}}</span>
+            </button>
+        </li>
+    </ul>
+</div>
+<router-outlet></router-outlet>

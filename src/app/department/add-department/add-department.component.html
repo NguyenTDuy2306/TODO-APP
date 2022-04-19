@@ -1,0 +1,15 @@
+<h2>Add Department</h2>
+<div class="formData">
+<form [formGroup]="addDepartmentForm">
+    <label for="last-name">Name: </label>
+    <br>
+    <input id="id" type="text" formControlName="name">
+    <br><br>
+    <label for="last-name">Start Date: </label>
+    <br>
+    <input id="first-name" type="text" formControlName="startDate">
+    <br><br>
+    <button type="button" class="btn btn-success" (click)="onAdd()">ADD</button>
+    <button type="button" class="btn btn-primary" (click)="onBack()">BACK</button>
+  </form>
+</div>

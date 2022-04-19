@@ -1,0 +1,17 @@
+<h2>List Of Department</h2>
+<button type="button" class="btn btn-warning" (click)="addDepartment()">ADD DEPARTMENT</button>
+<div class="btn1">
+  <!-- <button style="font-size:10px; background-color: rgb(71, 197, 79); border-radius: 10px; height: auto;" (click)="navigateToaddEmployee()">Add<i class="fa fa-pencil"></i></button> -->
+
+
+</div>
+<ul class="departments">
+  <li *ngFor="let department of departments">
+    <button routerLink="list-employee" [class.selected]="department === selectedDepartment" type="button" (click)="onSelect(department)">
+      <span class="badge">{{department.id}}</span>
+      <span class="name">{{department.name}}</span>
+    </button>
+  </li>
+  
+</ul>
+<router-outlet></router-outlet>
